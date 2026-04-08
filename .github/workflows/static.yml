@@ -2,7 +2,7 @@ name: Deploy Vite site to Pages
 
 on:
   push:
-    branches: ["main"] 
+    branches: ["main"] # Asegúrate de que esta sea tu rama con el código
 
 permissions:
   contents: read
@@ -15,19 +15,23 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24 # Actualizamos a la versión que pide GitHub
           cache: 'npm'
+
       - name: Install dependencies
-        run: npm install
+        run: npm install # Esto instala Vite y las librerías
+
       - name: Build
-        run: npm run build
+        run: npx vite build # Usamos 'npx' para asegurar que encuentre el ejecutable
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist # Aquí es donde Vite guarda los archivos listos
+          path: ./dist
 
   deploy:
     environment:
