@@ -217,6 +217,7 @@ const scale = Math.min(width, height) / (2.5 * maxDistance); // Escala
 - **Tailwind CSS** - Por el sistema de diseño utility-first
 - **Radix UI** - Por los componentes accesibles
 - **Vite** - Por la herramienta de build increíblemente rápida
+- **Nuestro equipo de trabajo** - Por prestar sus conocimientos previos para la realizacion de este proyecto posible
 
 ---
 
