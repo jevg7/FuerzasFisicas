@@ -220,6 +220,7 @@ const scale = Math.min(width, height) / (2.5 * maxDistance); // Escala
 - **Nuestro equipo de trabajo** - Por prestar sus conocimientos previos para la realizacion de este proyecto posible
 
 ---
+- **Sitio: https://jevg7.github.io/FuerzasFisicas/
 
 <div align="center">
 
