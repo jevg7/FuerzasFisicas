@@ -23,10 +23,10 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install # Esto instala Vite y las librerías
+        run: npm ci # Esto instala Vite y las librerías
 
       - name: Build
-        run: npx vite build # Usamos 'npx' para asegurar que encuentre el ejecutable
+        run: npm run build 
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
